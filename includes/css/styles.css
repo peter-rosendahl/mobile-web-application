@@ -1,0 +1,238 @@
+/*
+My Custom CSS
+=============
+Original author:  Brad Hussey
+Customized by: Peter Rosendahl
+Updated: january 2017
+Notes:	 Hand coded for Udemy.com
+*/
+
+/* --------------------------------------
+   Layout
+   -------------------------------------- */
+body {
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizelegibility;
+	background: -webkit-radial-gradient(50% bottom, circle, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1)), url('../../images/steel.png'); /* Safari 5.1 to 6.0 */
+    background: -o-radial-gradient(50% bottom, circle, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1)), url('../../images/steel.png'); /* For Opera 11.6 to 12.0 */
+    background: -moz-radial-gradient(50% bottom, circle, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1)), url('../../images/steel.png'); /* For Firefox 3.6 to 15 */
+    background: radial-gradient(at 50% bottom, circle, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1)), url('../../images/steel.png'); /* Standard syntax (must be last) */
+    color: #fff;
+}
+#features { text-align: center; }
+#features img { margin: 0 0 20px; }
+footer { background: #333; padding: 20px; }
+
+/* --------------------------------------
+   Typography
+   -------------------------------------- */
+.well .page-header { margin-top: 0; }
+.well .page-header h1 { margin-top: 0; }
+ul.unstyled { list-style: none; padding: 0; }
+
+/* --------------------------------------
+   Navbar
+   -------------------------------------- */
+#searchInput { width: 200px; }
+.navbar-brand { padding: 13px 15px; }
+
+/* Nav scroll animation position changes */
+#bigCallout, #booking_form, #portfolio, #moreInfo { padding-top: 40px; margin-top: -40px; }
+
+   
+/* --------------------------------------
+   Global Styles
+   -------------------------------------- */
+.white_space { display: block; height: 60px; width: 100%; }
+.alert { margin-top: 20px; display: none; }
+.well { margin: 20px 0; }
+.tabbable img.thumbnail { margin: 0 20px 10px 0; }
+.thumbnails { margin: 20px 0; }
+.thumbnail { position: relative; }
+.thumbnail h3 { font-size: 16px; margin: 0 0 10px; line-height: 20px; }
+.thumbnail .price { font-size: 22px; position: absolute; top: -10px; right: -10px; padding: 10px; }
+.thumbnail .price sup { font-weight: normal; font-size: 12px; }
+.thumbnail span.glyphicon { margin-right: 5px; }
+.centered { text-align: center; }
+/* colors */
+.white { color: rgba(255,255,255,1); }
+.grey { color: rgba(150, 150, 150, 1); }
+.navbar { background: rgba(66, 139, 202, 0.75); }
+.navbar-nav>li>a {color: #fff;}
+.navbar-nav>.active>a, .navbar-nav>.active>a:hover, .navbar-nav>.active>a:focus, .navbar-nav>.open>a, .navbar-nav>.open>a:hover, .navbar-nav>.open>a:focus { color: #000; background-color: #428bca; }
+label { color: #fff; font-weight: lighter; letter-spacing: 0.075em; margin-top: 10px; margin-bottom: 0; }
+h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6, p.lead { color: #428bca; font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; font-weight: 400; }
+h1 small, h2 small, h3 small, h4 small, h5 small, h6 small, .h1 small, .h2 small, .h3 small, .h4 small, .h5 small, .h6 small { color: #428bca; font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; }
+p { color: #fff; }
+.well { background-color: rgba(100, 100, 100, 0.5); }
+
+/* --------------------------------------
+   Portfolio
+   -------------------------------------- */
+.no-space.box { margin: 0 -15px; }
+.portfolio > .figblock { position: relative; overflow: hidden; padding-left: 0; padding-right: 0; padding-bottom: 0; }
+.portfolio figcaption { position: absolute; width: 100%; height: 100%; /*max-width: 300px;*/ left: 0; top: 0; background-color: rgba(58, 63, 67, 0.8); padding: 10%; -webkit-transform: translateX(100%); -moz-transform: translateX(100%); -ms-transform: translateX(100%); -o-transform: translateX(100%); transform: translateX(100%); -webkit-transition: 350ms; -moz-transition: 350ms; -ms-transition: 350ms; -o-transition: 350ms; transition: 350ms; }
+.portfolio figcaption h4 { color: #fff; }
+.portfolio figcaption p { font-size: 0.929em; color: #fff; }
+.portfolio > div:hover figcaption { -webkit-transform: translateX(0); -moz-transform: translateX(0); -ms-transform: translateX(0); -o-transform: translateX(0); transform: translateX(0); }
+
+.portfolio .box { display: block; width: 100%; height: 300px; background-repeat: no-repeat; background-size: cover; background-position: center center; background-size: cover; }
+
+#booking .portfolio figcaption { background-color: rgba(0,0,0,0); -webkit-transform: translateX(0); -moz-transform: translateX(0); -ms-transform: translateX(0); -o-transform: translateX(0); transform: translateX(0);}
+#booking .portfolio figcaption h4 { display: block; width: 100%; height: 50px; background-color: rgba(0,0,0,0.5); text-align: center; line-height: 50px; }
+
+/* -----------------------------
+	Booking Form - Users only
+   ----------------------------- */
+#booking_form .booking_step { display: block;margin-top: 30px; }
+#booking_form legend, legend { color: #428bca;}
+#booking_form .form-group label { margin: 0; text-align: right; }
+#booking figcaption { padding: 0; margin: 0; }
+#booking figcaption h4 { margin: 0; }
+#booking figcaption input[type="checkbox"] { opacity: 0.01; width: 100%; height: 100%; position: absolute; bottom: 0; z-index: 2; }
+#booking figcaption label { position: absolute;bottom: 0;z-index: 5;background: rgba(0,0,0,0.5); color: #fff; padding: 10px 0; width: 100%; text-align: center; margin: 0; }
+#booking_form #submit_booking { margin: 10px auto; display: block; width: 300px; }
+#booking_form #submit_booking input[type="submit"] { width: 47%; float: left; }
+#booking_form #submit_booking input[type="reset"] { width: 47%; float: right; }
+
+/* --------------------------------------
+	Vertical accordion
+	"Vertical Simple Tab" by Pawan Pandey
+	Customized by Peter Rosendahl
+	url: http://bootsnipp.com/snippets/RlrN4
+   -------------------------------------- */
+div.bhoechie-tab-container{ 
+	z-index: 10; 
+	background-color: #ffffff; 
+	padding: 0 !important; 
+	border-radius: 4px; 
+	-moz-border-radius: 4px; 
+	border:1px solid #ddd; 
+	-webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175); 
+	box-shadow: 0 6px 12px rgba(0,0,0,.175); 
+	-moz-box-shadow: 0 6px 12px rgba(0,0,0,.175); 
+	background-clip: padding-box; 
+	opacity: 0.97; 
+	filter: alpha(opacity=97); }
+div.bhoechie-tab-menu { padding-right: 0; padding-left: 0; padding-bottom: 0; }
+div.bhoechie-tab-menu div.list-group { margin-bottom: 0; }
+div.bhoechie-tab-menu div.list-group>a { margin-bottom: 0; text-transform: uppercase; }
+div.bhoechie-tab-menu div.list-group>a .glyphicon, div.bhoechie-tab-menu div.list-group>a .fa { color: #5A55A3; }
+div.bhoechie-tab-menu div.list-group>a:first-child { border-top-right-radius: 0; -moz-border-top-right-radius: 0; }
+div.bhoechie-tab-menu div.list-group>a:last-child { border-bottom-right-radius: 0; -moz-border-bottom-right-radius: 0; }
+div.bhoechie-tab-menu div.list-group>a.active, 
+div.bhoechie-tab-menu div.list-group>a.active .glyphicon, 
+div.bhoechie-tab-menu div.list-group>a.active .fa { 
+	background-color: #5A55A3; 
+	background-image: #5A55A3; 
+	color: #ffffff;
+	-webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; }
+div.bhoechie-tab-menu div.list-group>a.active:before{ 
+	content: ''; position: absolute; 
+	right: 100%; 
+	top: 50%; 
+	margin-top: -13px; 
+	border-left: 0; 
+	border-bottom: 13px solid transparent; 
+	border-top: 13px solid transparent; 
+	border-right: 10px solid #5A55A3; }
+
+div.bhoechie-tab-content { 
+	background-color: #ffffff; 
+	height: 380px; 
+	color: #fff;
+	-webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; }
+div.bhoechie-tab-content div.bhoechie-tab-inner { background-color: rgba(0,0,0,0.75); width: 100%; height: 100%; padding: 50px; }
+div.bhoechie-tab-content h1 { text-transform: uppercase; }
+div.bhoechie-tab-content i { display: block; padding: 0 15%; }
+div.bhoechie-tab div.bhoechie-tab-content:not(.active) { 
+	display: none; 
+	-webkit-transition: all 0.3s ease; 
+	-moz-transition: all 0.3s ease; 
+	-o-transition: all 0.3s ease; 
+	transition: all 0.3s ease; }
+
+/*Customized by Peter Rosendahl here*/
+div.bhoechie-tab-container { background-color: rgba(0,0,0,0); border: 0px; box-shadow: 0 0 0; }
+div.bhoechie-tab-container .bhoechie-tab { padding-right: 0; }
+div.bhoechie-tab-container .bhoechie-tab-menu { padding-right: 15px; }
+div.bhoechie-tab-container .bhoechie-tab-menu .list-group { background: rgba(0,0,0,0.5); }
+
+
+/* --------------------------------------
+	YouTube Video responsiveness
+   -------------------------------------- */
+#video_teaser .responsive-video { position: relative; padding-bottom: 56.25%; padding-top: 60px; overflow: hidden; }
+#video_teaser .responsive-video iframe, #video_teaser .responsive-video object, #video_teaser .responsive-video embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+.tabbable { background: rgba(100, 100, 100, 0.5); padding: 20px; border-radius: 4px;}
+
+/* --------------------------------------
+	Footer
+   -------------------------------------- */
+#credits { text-align: right; }
+
+
+/* --------------------------------------
+	Modal for login
+   -------------------------------------- */
+
+#myModal b, #myModal p { color: #000; }
+
+/* --------------------------------------
+   Media Queries
+   -------------------------------------- */
+
+/* Portrait & landscape phone */
+@media (max-width: 480px) {
+	#main { min-height: 320px; }
+	.container { width: 100%; }
+	.portfolio .col-md-2 img { width: 100%; }
+	.portfolio .figblock { float: none; margin: 0 auto; } 
+}
+
+/* tablet version */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	#main { min-height: 620px; }
+	.portfolio .col-md-2 img { width: 100%; }
+	.portfolio .figblock { float: none; margin: 0 auto; } 
+}
+
+@media only screen and (min-width: 616px ) and (max-width: 767px) {
+	.portfolio .figblock { float: left; margin: 0 auto;  } 
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+	#main { min-height: 620px; }
+	div.bhoechie-tab { padding-left: 0; }
+	div.bhoechie-tab-container .bhoechie-tab-menu { padding-right: 0; }
+	.portfolio figcaption h4 { font-size: 1.5em }
+	.portfolio figcaption p { font-size: 1em; }
+	form#booking_form { max-width: 600px; margin: 0 auto; }
+	#booking .row.booking { max-width: 600px; margin: 0 auto; }
+
+	#credits { text-align: center; }
+}
+
+/* media query for the figcaption to be displayed below the image */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	/*label { display: none; }
+	.container { width: 100%; }
+	.portfolio .col-md-2 { width: 25%; }
+	.portfolio { margin-bottom: 15px; }
+	.portfolio figcaption { position: absolute; width: 110%; height: 100%; left: -15px; }
+	.portfolio > div:before { font-size: 1em; padding: 0px; width: 100%; color: #fff; display: block; font-weight: bold; text-transform: capitalize; background-color: rgba(42, 47, 51, 0.8); position: absolute; }
+	.portfolio figcaption { position: relative; opacity: 1; -webkit-transform: translateX(0%); -moz-transform: translateX(0%); -ms-transform: translateX(0%); -o-transform: translateX(0%); transform: translateX(0%); background-color: #3a3f43; }*/
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+	#main { min-height: 660px; }
+}

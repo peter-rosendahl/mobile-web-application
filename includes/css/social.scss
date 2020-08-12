@@ -1,0 +1,25 @@
+@mixin backp($multiplier) {
+	background-position-x: 50px * $multiplier;
+}
+
+ul#social {
+	li {
+		display: inline-block;
+
+		a {
+			display: block; 
+			width: 49px; 
+			height: 48px; 
+			margin: 5px; 
+			background: url(../../images/icon_sprite2.png);
+
+			&:hover {
+				background-position-y: 49px;
+			}
+		}
+		#facebook { @include backp(0); }
+		#twitter { @include backp(1); }
+		#instagram { @include backp(2); }
+		#linkedin { @include backp(3); }
+	}
+}
