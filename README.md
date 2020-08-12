@@ -1,5 +1,5 @@
 # Mobile Web Application
-> A school project made of PHP and SQLite.
+> A school project in the fourth quarter of 2016 made of PHP and SQLite.
 
 [View Demo here](http://mwa-test.prmedia.dk/)
 
